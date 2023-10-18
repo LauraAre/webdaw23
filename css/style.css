@@ -1,0 +1,484 @@
+body {
+    margin: 15px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+* {
+    box-sizing: border-box;
+    color:black;
+}
+
+/* For desktop: */
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* For mobile: */
+@media screen and (max-width: 1000px) {
+    .container {
+        width: 100%;
+    }
+}
+
+/* For desktop: */
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* For mobile: */
+@media screen and (max-width: 1000px) {
+    .row {
+        flex-wrap: wrap;
+    }
+}
+
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+/* For desktop: */
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+    margin-left: 330px;
+    margin-right: 10px;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+/* For mobile: */
+@media only screen and (max-width: 1000px) {
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+
+/* For desktop: */
+[class*="col-"] {
+    padding: 15px;
+}
+
+.shadow {
+    box-shadow: 0 0 20px lightblue;
+    border-radius: 5px;
+}
+nav ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+nav li {
+    display: inline;
+    padding: 10px;
+    font-size: 20px;
+}
+/* For mobile: */
+@media screen and (max-width: 1000px) {
+    nav li {
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+    }
+    nav ul {
+        background-color: rgb(243, 251, 254);
+    }
+}
+
+nav li a {
+    color:black;
+}
+
+nav li:hover {
+    background-color:rgba(255, 255, 255, 0.311);
+}
+
+.text-right{
+    text-align: right;
+}
+
+a {
+    text-decoration: none;
+}
+.text-center {
+    text-align: center;
+}
+.py-3 {
+    padding: 12px 0px;
+}
+.px-3 {
+    padding: 0 16px;
+   
+}
+.p-3 {
+    padding:2px;
+}
+
+.margin-py3 {
+    margin: 0 40px;
+}
+
+.cajita1y2 {
+    display: block;
+    text-align: center;
+    width: 40%;
+    margin-bottom: 20px;
+}
+
+.h1-parrafos {
+    width: 80%;
+    margin-left: 120px;
+}
+
+.etiqueta-span {
+    color: #e2fafa;
+    background-color: green;
+}
+
+
+.bg-rosa { 
+    background-color:#fd7ba2e3;
+    border-radius: 4px;
+}
+
+.bg-rosa-c {
+    background-color: lightpink;
+}
+
+.bg-azul-c {
+    background-color:lightskyblue;
+}
+
+.bg-blanco {
+    background-color: white;
+}
+
+.bg-deg-home {
+    background-image: linear-gradient( #fa6e98ee, #eac863f1);
+}
+
+.bg-deg-parrafos {
+    background-image:linear-gradient( #f46993ea, #e455f4 ) ;
+}
+
+.bg-deg-enlaces{
+    background-image:linear-gradient( #4ea6e5, #f05ee8c1, #e33066c4) ;
+}
+
+.bg-deg-listas {
+    background-image: linear-gradient( #4ea6e5,#2eeae4 );
+}
+
+.bg-deg-tablas {
+    background-image: linear-gradient( #fa65de,#7d88ef);
+}
+
+.bg-deg-formularios {
+    background-image: linear-gradient( #ca5fff,#72faf3);
+}
+
+.bg-multimedia {
+    background-color: #e455f4 ;
+}
+
+
+
+.text-white {
+    color: white;
+}
+
+.text-subr {
+    text-decoration: underline;
+}
+
+.text-big {
+    font-size: 28px;
+}
+
+.text-black {
+    color: black;
+}
+
+footer h1 {
+    border-bottom-left-radius: 10px;
+}
+footer h1 {
+    border-bottom-right-radius: 10px;
+}
+
+h1 {
+    margin: 0;
+    
+}
+
+#btnmenu {
+    font-size: 40px;
+    display: none;
+}
+/* For mobile: */
+@media screen and (max-width: 1000px) {
+    #btnmenu {
+        display: inline;
+    }
+    #menu{
+        display: none;
+    }
+}
+@media screen and (max-width: 1600px) and (min-width: 1000px)  {
+    #menu{
+        display: block;
+    }
+}
+
+#olcustom ol {
+    list-style-type: upper-alpha;
+}
+
+#olcustom ol ol {
+    list-style-type:upper-roman;
+}
+
+#olcustom2 ol {
+    list-style-type:lower-alpha;
+}
+
+#olcustom2 ol ol {
+    list-style-type:lower-roman;
+}
+
+#olcustom2 ol ol ol {
+    list-style-type:upper-roman ;
+}
+
+
+#ulcustom ul ul {
+    list-style-image: url(../img/carita.png);
+}
+
+#ulcustom ul ul ul {
+    list-style-image: url(../img/luna.png);
+}
+
+#ulcustom ul ul ul ul {
+    list-style-type:square;
+    list-style-image: none;
+}
+
+#ulcustom ul ul ul ul ul {
+    list-style-image:url(../img/pan.png);
+}
+
+#listas dt {
+    background-color:purple;
+    color: white;
+    display: inline;
+
+}
+
+#listas dd {
+    padding: 20px 0;
+}
+
+
+table.tstriped tr:nth-child(odd) {
+    background-color: rgb(66, 223, 248);
+}
+
+table.tstriped tr:nth-child(even) {
+    background-color:#e034f3;
+}
+
+.tabla-encabezado {
+    margin: 0 auto;
+    width: 60%;
+}
+
+.tabla-encabezado th {
+    background-color:#e78ff1;
+    color:rgb(131, 8, 246);
+}
+
+.tabla-encabezado td {
+    background-color:rgb(148, 178, 233);
+}
+
+
+table.tablecenter {
+    width: 70%;
+    margin: 0 auto ;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.s1daw {
+    color:#008080;
+    font-size: 23px;
+    font-style: italic;
+}
+
+#s1daw-custom th {
+    color:#008080;
+    font-weight: bold;
+    background-color: #f0f0f0;
+}
+
+.bg-fol {
+    background-color: #f0f0c8;
+}
+
+.bg-ende {
+    background-color: #28C8C8;
+}
+
+.bg-lmsg {
+    background-color: #ffd232;
+}
+
+.bg-prog {
+    background-color: #bc7878;
+}
+
+.bg-sisi {
+    background-color: #b4b464;
+}
+
+.bg-ing {
+    background-color: #ffa264;
+}
+
+.bg-bdd {
+    background-color: #ffc8c8;
+}
+
+#botonenviar {
+    background-color:rgb(172, 133, 192);
+    border-radius: 4px;
+    width: 170px;
+    border-color:rgb(171, 126, 194);
+    color: white;
+    font-weight: bold;
+}
+
+#border-input {
+    border: 2px solid rgb(156, 71, 199);
+    border-radius: 3px;
+}
+
+
+
+
+form h3 {
+    color:rgb(156, 71, 199);
+    font-weight: bold;
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+
+.login {
+    float: left;
+    width: 35%;
+    padding: 0 40px;
+}
+
+
+.registro {
+    float: right;
+    width: 50%;
+    padding: 0 40px;
+    margin-left: 70px;
+    
+}
+
+.input-html5 {
+   margin: 0 auto;
+   width: 40%;
+}
+
+.input-html5 fieldset {
+    background-color: #e2fafa;
+    padding: 0 30px;
+}
+
+.input-html5 legend {
+    background-color:rgb(1, 1, 107);
+    color:white;
+   padding: 8px;
+}
+
+
+.clear-both {
+    clear: both;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

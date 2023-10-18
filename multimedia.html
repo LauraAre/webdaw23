@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso HTML5-CSS3</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container shadow">
+        <header>
+            <div class="row align-items-center">
+                <div class="col-3"><img src="img/logoiesfseif.png" alt="logo" width="250"></div>
+                <div class="col-9 bg-rosa">
+                    <span id="btnmenu" onclick="opendrawer()">&#9776;</span>
+                    <nav id="menu">
+                        <ul class="text-right">
+                            <li>
+                                <a href="index.html">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="parrafos.html">
+                                    Párrafos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="enlaces.html">
+                                    Enlaces
+                                </a>
+                            </li>
+                            <li>
+                                <a href="listas.html">
+                                    Listas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tablas.html">
+                                    Tablas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="formularios.html">
+                                    Formularios
+                                </a>
+                            </li>
+                            <li>
+                                <a href="multimedia.html">
+                                    Multimedia
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+
+        </header>
+        <main class="shadow">
+            <div class="px-3">
+                <h1 class="text-center bg-multimedia text-white py-3">HTML5 & CSS3</h1>
+            </div>
+            <div class="px-3">
+                <hr>
+            </div>
+            <div class="p-3">
+
+
+                <div id="multimedia" class="py-3 margin-py3">
+                    <h2 class="text-center text-big">MULTIMEDIA</h2>
+
+                    <!--  Hay que usar 3 formatos de video si queremos llegar a todo el publico (en todos los navegadores):
+                   de type: video/mp4, video/webm, video/ogg -->
+
+                    <h3> Video: </h3>
+                    <video controls autoplay width="40%">
+                        <source src="src/Fuensalida.mp4" type="video/mp4">
+                        <source src="src/Fuensalida.ogv" type="video/ogv">
+                        <source src="src/Fuensalida.webm" type="video/webm">
+
+                    </video>
+
+                    <h3> Audio: </h3>
+
+                    <!-- Hay que usar 3 formatos igual para llegar a todos los navegadores:
+                    audio/mp3, audio/wav, audio/ogg            -->
+                    <audio controls>
+                        <source src="src/" type="audio/mpeg">
+                        <source src="src/" type="audio/wav">
+                        <source src="src/" type="audio/ogg">
+
+                    </audio>
+
+                    <h3> Video mediante iframe: </h3>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/2W2kDIC-_NE?si=0FAzwa6QqFTmoJ-7"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen>
+                    </iframe>
+
+
+
+                </div>
+            </div>
+        </main>
+        <footer>
+            <h1 class="bg-multimedia text-center text-white py-3">&copy; Paco Pulido</h1>
+        </footer>
+    </div>
+    <script>
+        function opendrawer() {
+            document.getElementById('menu').style.display = 'block';
+            document.getElementById('menu').style.witdh = '100%';
+        }
+    </script>
+</body>
+
+</html>

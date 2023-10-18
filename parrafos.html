@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso HTML5-CSS3</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container shadow">
+        <header>
+            <div class="row align-items-center">
+                <div class="col-3"><img src="img/logoiesfseif.png" alt="logo" width="250"></div>
+                <div class="col-9 bg-rosa">
+                    <span id="btnmenu" onclick="opendrawer()">&#9776;</span>
+                    <nav id="menu">
+                        <ul class="text-right">
+                            <li>
+                                <a href="index.html">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="parrafos.html">
+                                    Párrafos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="enlaces.html">
+                                    Enlaces
+                                </a>
+                            </li>
+                            <li>
+                                <a href="listas.html">
+                                    Listas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tablas.html">
+                                    Tablas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="formularios.html">
+                                    Formularios
+                                </a>
+                            </li>
+                            <li>
+                                <a href="multimedia.html">
+                                    Multimedia
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+
+        </header>
+        <main class="shadow">
+            <div class="px-3">
+                <h1 class="text-center bg-deg-parrafos text-white py-3">HTML5 & CSS3</h1>
+            </div>
+            <div class="px-3">
+                <hr>
+            </div>
+            <div class="p-3">
+
+
+                <div id="parrafos" class="py-3 margin-py3">
+                    <h2 class="text-center text-big"> PÁRRAFOS</h2>
+                    <p> Quiero hacer algunos párrafos y para eso he usado la etiqueta p </p>
+                    <p class="text-black"> TEXTO CREADO CON LA ETIQUETA p </p>
+
+                    <p> Para hacer un salto de línea sin
+                        dejar ninguna línea en blanco se utiliza la etiqueta br.
+
+                        <br> </br>
+                        <br> Cultivo una rosa blanca </br>
+                        <br> en junio como en enero </br>
+                        <br> para el amigo sincero </br>
+                        <br> que me da su mano franca. </br>
+                    </p>
+                    <p> Si quiero insertar encabezados puedo utilizar las etiquetas h1, h2, h3, h4, h5 y h6 </p>
+
+                    <h1 class=" text-center h1-parrafos"> Hoolaaaa Soy Laura esto es un Encabezado h1 </h1>
+                    <h2> Esto es un Encabezado 2 </h2>
+                    <h3 class="bg-azul-c"> Esto es un Encabezado 3 </h3>
+                    <h4> Se puede comprobar como cada vez el texto va haciendose más pequeño </h4>
+                    <h5> Hola Encabezado h5 </h5>
+                    <h6> Si ves esto, enhorabuena no estás ciego. Encabezado h6 </h6>
+
+                    <p> Con la etiqueta strong se puede poner el texto en negrita.
+                        <strong> Hola esto es importante por eso lo pongo en negrita </strong>
+                    </p>
+
+                    <p> Para poner texto en cursiva utilizamos la etiqueta em.
+                        <em> Hola estoy en cursiva </em>
+                    </p>
+
+                    <p> Para hacer subíndices y superíndices utilizamos las etiquetas sub y sup </p>
+
+                    <p> Ejemplo con subíndice: x <sub> 5 </sub></p>
+
+                    <p> Ejemplo con superíndice: 55 <sup> 6 </sup></p>
+
+                    <p> Para tener una cajita dentro de un texto en la misma línea se pone la etiqueta span.
+                        <span class="etiqueta-span"> Esto está hecho con la etiqueta span</span>
+                    </p>
+
+                    <p> EJEMPLO DE CAJITAS CON DIV: </p>
+                    <div class="text-purple bg-azul-c cajita1y2">
+                        Cajita 1
+                    </div>
+
+                    <div class="text-purple bg-rosa-c cajita1y2 ">
+                        Cajita 2
+                    </div>
+
+                </div>
+            </div>
+        </main>
+        <footer>
+            <h1 class="bg-deg-parrafos text-center text-white py-3">&copy; Paco Pulido</h1>
+        </footer>
+    </div>
+    <script>
+        function opendrawer() {
+            document.getElementById('menu').style.display = 'block';
+            document.getElementById('menu').style.witdh = '100%';
+        }
+    </script>
+</body>
+
+</html>
